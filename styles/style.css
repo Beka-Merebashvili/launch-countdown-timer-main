@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+/* styles for mobile */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1D1E28;
+    background-image: url(../images/bg-stars.svg);
+    background-size: cover;
+}
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 6.13636px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    width: 326px;
+    margin: 142px 0 54px 0;
+}
+.timer {
+    display: flex;
+    gap: 16px;
+}
+.box-bg {
+    width: 70px;
+    height: 71px;
+    background: #191A23;
+    border-radius: 8px;
+}
+.box {
+    width: 70px;
+    height: 66px;
+    background: #343650;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.days , .hours , .minutes , .seconds {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.08px;
+    color: #FB5E84;
+}
+.line {
+    width: 70px;
+    height: 1px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: absolute;
+    top: 50%;
+}
+.circle {
+    width: 6px;
+    height: 6px;
+    background: #191A23;
+    border-radius: 50%;
+    border: none;
+}
+.left-circle {
+    position: absolute;
+    top: calc(50% - 2.5px);
+    left: -3px;
+}
+.right-cirlce {
+    position: absolute;
+    top: calc(50% - 2.5px);
+    right: -3px;
+}
+.date {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+.date p {
+    font-size: 7px;
+    font-weight: 700;
+    width: 70px;
+    text-align: center;
+    letter-spacing: 2.95937px;
+    color: #8385A9;
+}
+.footer {
+    width: 100%;
+    height: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../images/pattern-hills.svg);
+    background-size: cover;
+}
+.media-icons {
+    display: flex;
+    gap: 32px;
+}
+
+
+/* styles for desktop */
+
+@media only screen and (min-width: 1440px) {
+    h1 {
+        font-size: 22px;
+        width: 430px;
+    }
+    .timer {
+        gap: 32px;
+    }
+    .box-bg{
+        width: 148px;
+        height: 150px;
+    }
+    .box {
+        width: 148px;
+        height: 140px;
+    }
+    .days , .hours , .minutes , .seconds {
+        font-size: 80px;
+    }
+    .line {
+        width: 148px;
+    }
+    .circle {
+        width: 12px;
+        height: 12px;
+    }
+    .left-circle {
+        top: calc(50% - 4px);
+        left: -6px;
+    }
+    .right-cirlce {
+        top: calc(50% - 5px);
+        right: -6px;
+    }
+    .date {
+        gap: 32px;
+    }
+    .date p {
+        font-size: 14px;
+        width: 148px;
+        letter-spacing: 5.9px;
+    }
+    .media-icons img:hover {
+        cursor: pointer;
+        filter: invert(59%) sepia(43%) saturate(3121%) hue-rotate(308deg) brightness(95%) contrast(107%);
+    }
+}
